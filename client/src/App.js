@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+import logo from './img/logo.png';
+import bg from './img/bg.png';
+import base from './img/base.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div class="bg-image" style={{ 
+          backgroundImage: 'url('+bg+')',
+          backgroundSize: "cover",
+          width: '100%',
+          height: "100vh",
+          color: "#f5f5f5" }}>
+          <img src={logo} width = "15%" alt="Logo"/>
+          <div class = "flex-container">
+            <div class = "box"><img src={base} width ="30%" alt="foodex base image"/></div>
+            <div class ="box overlay">
+              <div class = "text-box">
+                  FINALLY GOT TEXT IN HERE
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
   );
