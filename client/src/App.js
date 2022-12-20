@@ -18,7 +18,11 @@ function App() {
             <div class = "box"><img src={base} width ="30%" alt="foodex base image"/></div>
             <div class ="box overlay">
               <div class = "text-box">
-                  FINALLY GOT TEXT IN HERE
+                  Restaurant:
+                  <br></br>
+                  Location:
+                  <br></br>
+                  Link:
               </div>
             </div>
           </div>
