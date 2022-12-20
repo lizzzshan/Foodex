@@ -46,6 +46,7 @@
   margin-right: auto;
 }
 
+/*Note, measurements in vw to track based on size of elem*/
 .box {
   width: 100%;
   position:absolute;
@@ -54,15 +55,15 @@
 }
 .overlay {
   z-index: 9;
-  margin:30px;
+  margin:1vw;
   width: 20%;
   height:30%;
 }
 
 .text-box {
   background-color:  rgb(105, 142, 105);;
-  width: 200px;
-  height: 100px;
+  width: 15vw;
+  height: 8vw;
   border: 2px solid black;
   padding: 50px;
   margin: 5px;
