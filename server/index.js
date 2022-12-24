@@ -1,5 +1,6 @@
 'use strict';
 const express = require('express');
+const keys = require('../config/keys')
 
 const app = express();
 const PORT = process.env.PORT || 3000; 
@@ -8,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.get('/', (req, res) => {
  
   const yelp = require('yelp-fusion');
-  const client = yelp.client('YI4jnnsErWoY10FSViKtnkbdu6N5TbcbGN6k2RSQfdWlL5reXu5X6Wm6O2dc1yvwK9As6nlVudEF_lZSvCNSGz0HBA9Fr9RL1Oa_sEQJCIPfjOKmr8YJumdH0GqhY3Yx');
+  const client = yelp.client(keys.yelpKey);
   const index = Math.floor(Math.random() * 10) + 1;
   
   client.search({
