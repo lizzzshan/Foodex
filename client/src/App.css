@@ -69,3 +69,7 @@
   margin: 5px;
   word-wrap: break-word;
 }
+
+img{
+  pointer-events: none;
+}
