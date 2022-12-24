@@ -14,10 +14,10 @@ function App() {
           height: "100vh",
           color: "#f5f5f5" }}>
           <img src={logo} width = "15%" alt="Logo"/>
-          <div class = "flex-container">
-            <div class = "box"><img src={base} width ="30%" alt="foodex base image"/></div>
-            <div class ="box overlay">
-              <div class = "text-box">
+          <div className = "flex-container">
+            <div className = "box"><img src={base} width ="30%" alt="foodex base image"/></div>
+            <div className ="box overlay">
+              <div className = "text-box">
                   Restaurant:
                   <br></br>
                   Location:
